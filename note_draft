@@ -1,0 +1,13 @@
+--- Ceci est un test de copy/paste SQL query
+
+SELECT *
+FROM table_random_1
+
+--- Ceci est la commnande permettant de printer l'intégralité de la table depuis Big Query. Le problème étant : parfois on ne veut pas tout printer pour des raisons et questions de ressources
+--- Dans ce cas, on va appliquer la commande LIMIT [0-9]+
+
+SELECT *
+FROM table_random_1
+LIMIT 1000;
+
+--- ⚠️⚠️⚠️ La fonction LIMIT se place toujours après le FROM 
